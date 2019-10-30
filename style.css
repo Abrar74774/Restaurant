@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,600&display=swap");
 * {
   box-sizing: border-box;
+}
+
+::selection {
+  color: #fdfdfd;
+  background-color: #222;
 }
 
 .overlay2 {
@@ -24,14 +29,24 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  text-align: center;
+  font-family: "Great Vibes", cursive !important;
+  color: #222;
+  font-size: 30px;
+  display: block;
+}
+
 p {
   font-size: 24px;
-  text-align: center;
+  text-align: justify;
+  padding: 0 2rem;
   color: #222;
 }
 
 body {
   font-family: "EB Garamond", serif;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -42,6 +57,24 @@ body {
 
 a {
   text-decoration: none;
+}
+
+a.menu:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 40%;
+  position: absolute;
+  background: #222;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 20%;
+}
+
+a.menu:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .noselect {
@@ -55,9 +88,9 @@ a {
 .header {
   background: rgba(22, 22, 22, 0.8);
   color: #222;
-  height: 60px;
+  height: 100px;
   width: 100%;
-  margin-bottom: -85px;
+  margin-bottom: -125px;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -68,6 +101,7 @@ a {
   margin: 0 auto;
   padding: 0;
   height: 100%;
+  align-items: center;
 }
 .header ul li {
   list-style-type: none;
@@ -77,7 +111,8 @@ a {
 .header ul li a {
   color: #fdfdfd;
   font-size: 24px;
-  padding: 15px 0;
+  font-weight: 600;
+  padding: 10px 0;
   display: block;
   margin: 0 0;
   height: 100%;
@@ -144,7 +179,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 900px;
   position: relative;
 }
 
@@ -152,7 +187,7 @@ a {
   background-image: url("chicken.jpg") !important;
 }
 .chicken .logo {
-  font-size: 7rem;
+  font-size: 9vw;
   padding-top: 200px;
   color: #fdfdfd;
   text-align: center;
@@ -167,36 +202,58 @@ a {
 .content {
   width: 100%;
   height: auto;
-  padding: 40px 40px;
+  padding: 100px 40px;
   color: #222;
   background-color: #fdfdfd;
   position: relative;
   z-index: 999;
   box-shadow: 0px 0px 30px 40px #fdfdfd;
 }
-.content a {
+.content a.menu {
   display: block;
   width: 300px;
   color: #222 !important;
   font-size: 24px;
+  font-weight: 600;
   transition: color 0.4s;
   font-family: inherit;
   margin: 40px auto;
   text-align: center;
   position: relative;
 }
-.content a span {
-  position: relative;
-  left: 5px;
-  color: #222;
-  transition: left 0.4s, color 0.4s;
+.content .writing {
+  display: flex;
 }
-.content a:hover {
-  color: #919191 !important;
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-.content a:hover span {
-  left: 20px;
-  color: #919191;
+
+input[type=submit] {
+  background-color: #222;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #555;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .footer {
@@ -213,7 +270,7 @@ a {
 .overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(34, 34, 34, 0.336);
+  background-color: rgba(34, 34, 34, 0.582);
   position: absolute;
 }
 
@@ -247,15 +304,16 @@ a {
 
 .food-display {
   display: flex;
-  height: 250px;
+  height: 350px;
   width: 100%;
+  margin-bottom: 90px;
   justify-content: center;
 }
 .food-display div {
   background-size: cover;
   background-position: center;
   height: 100%;
-  width: 300px;
+  width: 350px;
   background-image: url("kebab.jpg");
   margin: 10px;
 }
@@ -289,6 +347,26 @@ ul.list li:after {
   margin: 10px auto;
 }
 
+.contact {
+  display: flex;
+  height: 200px;
+  width: 85%;
+  margin: 10px auto 150px;
+}
+.contact div {
+  width: 30%;
+  margin: 0px 20px;
+}
+.contact div img {
+  height: 60%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+.contact div p {
+  text-align: center;
+}
+
 /* Mobile */
 @media only screen and (max-width: 600px) {
   .header {
@@ -299,18 +377,17 @@ ul.list li:after {
     display: block;
   }
 
-  .chicken .logo {
-    font-size: 6rem;
-    position: relative;
-    bottom: 100px;
-  }
-
   .food-display {
     flex-direction: column;
+    justify-content: center;
     height: 1000px;
   }
   .food-display div {
     margin: 10 auto;
+  }
+
+  .chicken .logo {
+    padding-top: 240px;
   }
 }
 /* Tablet */
@@ -318,13 +395,6 @@ ul.list li:after {
   .header {
     margin-bottom: -100px;
     height: 100px;
-  }
-  .header ul {
-    flex-wrap: wrap;
-  }
-
-  .chicken .logo {
-    padding-top: 180px;
   }
 }
 
