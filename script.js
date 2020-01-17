@@ -28,5 +28,5 @@ menu.addEventListener("click", function(){
 overlay.addEventListener("click", function(){
   setTimeout('overlay.style.zIndex = "-1";', 400)
   overlay.style.opacity = "0";
-  sidebar.style.left = "-40%";
+  sidebar.style.left = "-70%";
 })

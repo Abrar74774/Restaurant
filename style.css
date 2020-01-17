@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,600&display=swap");
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 ::selection {
   color: #fdfdfd;
-  background-color: #222;
-}
+  background-color: #222; }
 
 .overlay2 {
   height: 100%;
@@ -19,45 +17,39 @@
   z-index: -1;
   display: block;
   opacity: 0;
-  transition: opacity 0.4s;
-}
+  transition: opacity 0.4s; }
 
 h1 {
   text-align: center;
-  font-family: "Great Vibes", cursive !important;
+  font-family: 'Great Vibes', cursive !important;
   color: #222;
-  font-size: 50px;
-}
+  font-size: 50px; }
 
 h2 {
   text-align: center;
-  font-family: "Great Vibes", cursive !important;
+  font-family: 'Great Vibes', cursive !important;
   color: #222;
   font-size: 30px;
-  display: block;
-}
+  display: block; }
 
 p {
   font-size: 24px;
   text-align: justify;
   padding: 0 2rem;
-  color: #222;
-}
+  color: #222; }
 
 body {
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
   font-size: 24px;
   margin: 0;
   padding: 0;
   position: relative;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a.menu:after {
   background: none repeat scroll 0 0 transparent;
@@ -69,21 +61,25 @@ a.menu:after {
   position: absolute;
   background: #222;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 20%;
-}
+  width: 20%; }
 
 a.menu:hover:after {
   width: 100%;
-  left: 0;
-}
+  left: 0; }
+
+.logo {
+  font-size: 9vw;
+  padding-top: 200px;
+  color: #fdfdfd;
+  text-align: center;
+  line-height: 1; }
 
 .noselect {
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-}
+  user-select: none; }
 
 .header {
   background: rgba(22, 22, 22, 0.8);
@@ -93,137 +89,126 @@ a.menu:hover:after {
   margin-bottom: -125px;
   position: sticky;
   top: 0;
-  z-index: 9999;
-}
-.header ul {
-  justify-content: flex-end;
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  align-items: center;
-}
-.header ul li {
-  list-style-type: none;
-  width: 130px;
-  height: 50px;
-}
-.header ul li a {
-  color: #fdfdfd;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 10px 0;
-  display: block;
-  margin: 0 0;
-  height: 100%;
-  overflow: hidden;
-  text-align: center;
-  transition: color 0.4s;
-}
-.header ul li a:hover {
-  color: #fdfdfd81;
-}
-.header ul li:first-of-type {
-  margin-right: auto;
-}
+  z-index: 9999; }
+  .header ul {
+    justify-content: flex-end;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    align-items: center; }
+    .header ul li {
+      list-style-type: none;
+      width: 130px;
+      height: 50px; }
+      .header ul li a {
+        color: #fdfdfd;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 10px 0;
+        display: block;
+        margin: 0 0;
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        transition: color 0.4s; }
+      .header ul li a:hover {
+        color: #fdfdfd81; }
+    .header ul li:first-of-type {
+      margin-right: auto; }
 
 /* Menu for mob */
 .menu {
   display: none;
   background-color: rgba(0, 0, 0, 0);
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 35px;
   margin-bottom: -80px;
   position: fixed;
   z-index: 99999;
   left: 15px;
   left: 15px;
-  top: 10px;
-}
-.menu div {
-  width: 100%;
-  height: 10px;
-  border-radius: 5px;
-  margin: 6px 0;
-  background-color: #fdfdfd;
-  box-shadow: 2px 3px 3px 2px #0000007a;
-}
+  top: 10px; }
+  .menu div {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    margin: 6px 0;
+    background-color: #fdfdfd;
+    box-shadow: 2px 3px 3px 2px #0000007a; }
 
 /* Mob Sidebar */
 .sidebar {
   height: 100%;
-  width: 40%;
+  width: 70%;
   position: fixed;
   background-color: #333;
-  left: -40%;
+  left: -70%;
   z-index: 99999999;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: left 0.4s;
-}
-.sidebar div a {
-  color: #fdfdfd;
-  font-size: 24px;
-  padding: 10px 30px;
-  display: block;
-  margin: 20px 0;
-  height: 50px;
-  overflow: hidden;
-  text-align: center;
-}
+  transition: left 0.4s; }
+  .sidebar div a {
+    color: #fdfdfd;
+    font-size: 24px;
+    padding: 10px 30px;
+    display: block;
+    margin: 20px 0;
+    height: 50px;
+    overflow: hidden;
+    text-align: center; }
 
-.burger, .shawerma, .chicken {
-  background-image: url("kebab.jpg");
+.burger, .chicken, .shawerma {
+  background-image: url("./images/burger-min.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
-  position: relative;
-}
+  height: 90vh;
+  position: relative; }
 
 .chicken {
-  background-image: url("chicken.jpg") !important;
-}
-.chicken .logo {
-  font-size: 9vw;
-  padding-top: 200px;
-  color: #fdfdfd;
-  text-align: center;
-  line-height: 1;
-}
+  background-image: url("./images/chicken-min.jpg") !important; }
 
 .shawerma {
-  background-image: url("chickenshawarma.jpg") !important;
-  position: static !important;
-}
+  background-image: url("./images/chickenshawarma-min.jpg") !important;
+  position: static !important; }
 
 .content {
   width: 100%;
   height: auto;
-  padding: 100px 40px;
+  padding: 100px 2vw;
   color: #222;
   background-color: #fdfdfd;
   position: relative;
   z-index: 999;
-  box-shadow: 0px 0px 30px 40px #fdfdfd;
-}
-.content a.menu {
-  display: block;
-  width: 300px;
-  color: #222 !important;
-  font-size: 24px;
-  font-weight: 600;
-  transition: color 0.4s;
-  font-family: inherit;
-  margin: 40px auto;
-  text-align: center;
-  position: relative;
-}
-.content .writing {
+  box-shadow: 0px 0px 30px 40px #fdfdfd; }
+  .content a.menu {
+    display: block;
+    width: 300px;
+    color: #222 !important;
+    font-size: 24px;
+    font-weight: 600;
+    transition: color 0.4s;
+    font-family: inherit;
+    margin: 40px auto;
+    text-align: center;
+    position: relative; }
+
+.our-restaurant {
   display: flex;
-}
+  height: 60vh; }
+  .our-restaurant div.image {
+    background-size: cover;
+    flex: 1; }
+  .our-restaurant .writing {
+    flex: 1;
+    position: relative;
+    top: 50%;
+    padding: 0 2vw;
+    transform: translateY(-25%);
+    overflow: hidden; }
 
 input[type=text], select, textarea {
   width: 100%;
@@ -233,8 +218,7 @@ input[type=text], select, textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
-}
+  resize: vertical; }
 
 input[type=submit] {
   background-color: #222;
@@ -243,18 +227,15 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   transition: background-color 0.5s;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 input[type=submit]:hover {
-  background-color: #555;
-}
+  background-color: #555; }
 
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
-}
+  padding: 20px; }
 
 .footer {
   width: 100%;
@@ -264,138 +245,125 @@ input[type=submit]:hover {
   text-align: center;
   padding: 100px;
   position: relative;
-  z-index: 9999;
-}
+  z-index: 9999; }
 
 .overlay {
   height: 100%;
   width: 100%;
   background-color: rgba(34, 34, 34, 0.582);
-  position: absolute;
-}
+  position: absolute; }
 
 .card-container {
   display: flex;
   width: 100%;
   justify-content: center;
-  flex-wrap: wrap;
-}
-.card-container .card {
-  max-height: 500px;
-  width: 350px;
-  margin: 20px;
-  overflow: hidden;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.568);
-}
-.card-container .card .card-pic-food {
-  width: 80%;
-  background-position: center;
-}
-.card-container .card .card-pic-delivery {
-  width: 80%;
-}
-.card-container .card .desc {
-  padding: 30px;
-}
+  flex-wrap: wrap; }
+  .card-container .card {
+    max-height: 500px;
+    width: 350px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.568); }
+    .card-container .card .card-pic-food {
+      width: 80%;
+      background-position: center; }
+    .card-container .card .card-pic-delivery {
+      width: 80%; }
+    .card-container .card .desc {
+      padding: 30px; }
 
 .resize {
-  height: 600px;
-}
+  height: 600px; }
 
 .food-display {
   display: flex;
   height: 350px;
   width: 100%;
   margin-bottom: 90px;
-  justify-content: center;
-}
-.food-display div {
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 350px;
-  background-image: url("kebab.jpg");
-  margin: 10px;
-}
+  justify-content: center; }
+  .food-display div {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 350px;
+    background-image: url("./images/kebab-min.jpg");
+    margin: 10px; }
 
 .line {
   height: 2px;
   width: 50%;
   margin: 30px auto;
-  background-color: #7c7c7c;
-}
+  background-color: #7c7c7c; }
 
 ul.list {
   margin: 30px auto;
-  width: 1000px;
+  width: 80vw;
   list-style-type: none;
-  padding: 0;
-}
-ul.list li {
-  font-size: 25px;
-}
-ul.list li span {
-  font-size: inherit;
-  float: right;
-}
-ul.list li:after {
-  content: " ";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: #888;
-  margin: 10px auto;
-}
+  padding: 0; }
+  ul.list li {
+    font-size: 25px; }
+    ul.list li span {
+      font-size: inherit;
+      float: right; }
+  ul.list li:after {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #888;
+    margin: 10px auto; }
 
 .contact {
   display: flex;
   height: 200px;
   width: 85%;
-  margin: 10px auto 150px;
-}
-.contact div {
-  width: 30%;
-  margin: 0px 20px;
-}
-.contact div img {
-  height: 60%;
-  width: auto;
-  display: block;
-  margin: 0 auto;
-}
-.contact div p {
-  text-align: center;
-}
+  margin: 10px auto 150px; }
+  .contact div {
+    width: 30%;
+    margin: 0px 20px; }
+    .contact div img {
+      height: 60%;
+      width: auto;
+      display: block;
+      margin: 0 auto; }
+    .contact div p {
+      text-align: center; }
 
-/* Mobile */
-@media only screen and (max-width: 600px) {
-  .header {
-    display: none;
-  }
-
-  .menu {
-    display: block;
-  }
-
-  .food-display {
-    flex-direction: column;
-    justify-content: center;
-    height: 1000px;
-  }
-  .food-display div {
-    margin: 10 auto;
-  }
-
-  .chicken .logo {
-    padding-top: 240px;
-  }
-}
 /* Tablet */
 @media only screen and (max-width: 768px) {
   .header {
     margin-bottom: -100px;
-    height: 100px;
-  }
-}
+    height: 100px; } }
 
-/*# sourceMappingURL=style.css.map */
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .header {
+    display: none; }
+  .menu {
+    display: block; }
+  .food-display {
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px; }
+    .food-display div {
+      margin: 10 auto; }
+  .chicken .logo {
+    padding-top: 240px; }
+  .content {
+    padding: 5vw; }
+  .contact {
+    flex-direction: column;
+    height: auto; }
+    .contact div {
+      margin: 20px auto;
+      width: 35vw; }
+      .contact div img {
+        width: 100%;
+        height: auto; }
+      .contact div p {
+        padding: 0;
+        width: 60vw;
+        position: relative;
+        right: 13vw;
+        height: auto;
+        text-align: center; } }

@@ -1,0 +1,25 @@
+{
+  "name": "proj4_restaurant_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "sass": "^1.23.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "sass": "node-sass -w style.scss ./style.css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abrar74774/Restaurant.git"
+  },
+  "author": "Abrar Shahriar Hossain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abrar74774/Restaurant/issues"
+  },
+  "homepage": "https://github.com/Abrar74774/Restaurant#readme"
+}
