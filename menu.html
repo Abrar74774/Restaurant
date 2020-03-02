@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Restaurant</title>
   <style>
-    .header a {color: #fdfdfd;} 
+    .header a {
+      color: #fdfdfd;
+    }
+
     img {
-      width:85vw;
+      width: 85vw;
       height: auto;
-    }   
+    }
   </style>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <div class="sidebar" id="sidebar">
     <div><a href="index.html">Home</a></div>
@@ -21,85 +26,91 @@
     <div><a href="about.html">About&nbspUs</a></div>
     <div><a href="contact.html">Contact</a></div>
   </div>
-  <div class="overlay2" id="moberlay"></div>  
-    <div class="header">
-      <ul>
-        <li style="width:200px"><h1 class="logo noselect" style="font-size:20px;color:#fdfdfd;padding-top: 2px;line-height: 1;">Very Nice Restaurant<br>&#x2606 &#x2606 &#x2606</h1></li>        
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About&nbspUs</a></li>
-        <li><a href="contact.html">Contact</a></li>       
-      </ul>
+  <div class="overlay2" id="moberlay"></div>
+  <div class="header">
+    <ul>
+      <li style="width:200px">
+        <h1 class="logo noselect" style="font-size:20px;color:#fdfdfd;padding-top: 2px;line-height: 1;">Very Nice
+          Restaurant<br>&#x2606 &#x2606 &#x2606</h1>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About&nbspUs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="menu" id="mobmenu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="chicken">
+    <div class="overlay">
+      <h1 class="logo" id="logo" style="opacity: 0;">Menu</h1><br>
     </div>
-    <div class="menu" id="mobmenu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>  
-    <div class="chicken">
-      <div class="overlay">      
-        <h1 class="logo" id="logo" style="opacity: 0;">Menu</h1><br>
-      </div>
-    </div>  
-    <div class="content">
-      <h1>Chicken</h1>
-      <img src="./images/chicken-min.jpg" alt="chkngrill" height="300px" width="auto" style="margin:0 auto;display:block">
-      <ul class="list">
-        <li>Chicken grill <span>30</span></li>
-        <li>Chicken BBQ <span>35</span></li>
-        <li>Chicken Deep Fried <span>32</span></li>
-      </ul>
-      <br>
-      <h1>Burgers</h1>
-      <img src="./images/burger-min.jpg" alt="brgr" height="300px" width="auto" style="margin:0 auto;display:block">
-      <ul class="list">
-        <li>Regular Burger <span>25</span></li>
-        <li>Double Cheeseburger <span>29</span></li>
-        <li>Chicken Burger <span>20</span></li>
-      </ul>
-      <br>
-      <h1>Kebabs</h1>
-      <img src="./images/kebab-min.jpg" alt="kbb" height="300px" width="auto" style="margin:0 auto;display:block">
-      <ul class="list">
-        <li>Beef Kebab <span>23</span></li>
-        <li>Beef Kofta <span>23</span></li>
-        <li>Chicken Kebab <span>20</span></li>
-        <li>Mix Grill 500gm <span>50</span></li>
-      </ul>
-      <br>
-      <h1>Sandwiches</h1>
-      <img src="./images/sandwich-min.jpg" alt="snwch" height="300px" width="auto" style="margin:0 auto;display:block">
-      <ul class="list">
-        <li>Chicken Shawerma <span>15</span></li>
-        <li>Chicken Sandwich <span>13</span></li>
-        <li>Egg Sandwich <span>10</span></li>
-      </ul>
-      <br>
-      <h1>Seafood</h1>
-      <img src="./images/fish-min.jpg" alt="fshfry" height="300px" width="auto" style="margin:0 auto;display:block">
-      <ul class="list">
-        <li>Fish Fry <span>26</span></li>
-        <li>Mixed Seafood Platter <span>40</span></li>
-        <li>Shrimp n Garlic <span>25</span></li>
-      </ul>
-      <br><br><br>
-      <h1>Desserts</h1>
-      <img src="./images/dessert-min.jpg" alt="dsrt" height="300px" width="auto" style="margin:0 auto;display:block">
-      <ul class="list">
-        <li>Raspberry Icecream <span>15</span></li>
-        <li>Chocolate Icecream <span>15</span></li>
-        <li>Custard Pudding <span>10</span></li>
-      </ul>
-      <br>
-      <h1>Drinks</h1>
-      <img src="./images/drink-min.jpg" alt="strbrysmthi" height="300px" width="auto" style="margin:0 auto;display:block">
-      <ul class="list">
-        <li>Strawberry Smoothie <span>14</span></li>
-        <li>Soft Drink <span>8</span></li>
-        <li>Water <span>6</span></li>
-      </ul>
-    </div>
+  </div>
+  <div class="content">
+    <h1>Chicken</h1>
+    <img src="./images/chicken-min.jpg" alt="chkngrill"
+      style="height:auto;max-width:700px;margin:0 auto;display: block;">
+    <ul class="list">
+      <li>Chicken grill <span>30</span></li>
+      <li>Chicken BBQ <span>35</span></li>
+      <li>Chicken Deep Fried <span>32</span></li>
+    </ul>
+    <br>
+    <h1>Burgers</h1>
+    <img src="./images/burger-min.jpg" alt="brgr" style="height:auto;max-width:700px;margin:0 auto;display: block;">
+    <ul class="list">
+      <li>Regular Burger <span>25</span></li>
+      <li>Double Cheeseburger <span>29</span></li>
+      <li>Chicken Burger <span>20</span></li>
+    </ul>
+    <br>
+    <h1>Kebabs</h1>
+    <img src="./images/kebab-min.jpg" alt="kbb" style="height:auto;max-width:700px;margin:0 auto;display: block;">
+    <ul class="list">
+      <li>Beef Kebab <span>23</span></li>
+      <li>Beef Kofta <span>23</span></li>
+      <li>Chicken Kebab <span>20</span></li>
+      <li>Mix Grill 500gm <span>50</span></li>
+    </ul>
+    <br>
+    <h1>Sandwiches</h1>
+    <img src="./images/sandwich-min.jpg" alt="snwch" style="height:auto;max-width:700px;margin:0 auto;display: block;">
+    <ul class="list">
+      <li>Chicken Shawerma <span>15</span></li>
+      <li>Chicken Sandwich <span>13</span></li>
+      <li>Egg Sandwich <span>10</span></li>
+    </ul>
+    <br>
+    <h1>Seafood</h1>
+    <img src="./images/fish-min.jpg" alt="fshfry" style="height:auto;max-width:700px;margin:0 auto;display: block;">
+    <ul class="list">
+      <li>Fish Fry <span>26</span></li>
+      <li>Mixed Seafood Platter <span>40</span></li>
+      <li>Shrimp n Garlic <span>25</span></li>
+    </ul>
+    <br><br><br>
+    <h1>Desserts</h1>
+    <img src="./images/dessert-min.jpg" alt="dsrt" style="height:auto;max-width:700px;margin:0 auto;display: block;">
+    <ul class="list">
+      <li>Raspberry Icecream <span>15</span></li>
+      <li>Chocolate Icecream <span>15</span></li>
+      <li>Custard Pudding <span>10</span></li>
+    </ul>
+    <br>
+    <h1>Drinks</h1>
+    <img src="./images/drink-min.jpg" alt="strbrysmthi"
+      style="height:auto;max-width:700px;margin:0 auto;display: block;">
+    <ul class="list">
+      <li>Strawberry Smoothie <span>14</span></li>
+      <li>Soft Drink <span>8</span></li>
+      <li>Water <span>6</span></li>
+    </ul>
+  </div>
   <div class="footer">This is the footer.</div>
   <script src="script.js"></script>
 </body>
+
 </html>

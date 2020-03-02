@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Restaurant</title>
   <style>
-    .header a {color: #fdfdfd;}    
+    .header a {
+      color: #fdfdfd;
+    }
   </style>
-  <link rel="stylesheet" type="text/css" href="style.css">  
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <div class="sidebar" id="sidebar">
     <div><a href="index.html">Home</a></div>
@@ -17,84 +21,99 @@
     <div><a href="about.html">About&nbspUs</a></div>
     <div><a href="contact.html">Contact</a></div>
   </div>
-  <div class="overlay2" id="moberlay"></div>  
-    <div class="header">
-      <ul>
-        <li style="width:200px"><h1 class="logo noselect" style="font-size:20px;color:#fdfdfd;padding-top: 2px;line-height: 1;">Very&nbsp;Nice&nbsp;Restaurant<br>&#x2606 &#x2606 &#x2606</h1></li>        
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About&nbspUs</a></li>
-        <li><a href="contact.html">Contact</a></li>       
-      </ul>
+  <div class="overlay2" id="moberlay"></div>
+  <div class="header">
+    <ul>
+      <li style="width:200px">
+        <h1 class="logo noselect" style="font-size:20px;color:#fdfdfd;padding-top: 2px;line-height: 1;">
+          Very&nbsp;Nice&nbsp;Restaurant<br>&#x2606 &#x2606 &#x2606</h1>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About&nbspUs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="menu" id="mobmenu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="chicken">
+    <div class="overlay">
+      <h1 class="logo noselect" id="logo" style="opacity: 0;">Very&nbsp;Nice&nbsp; Restaurant<br>&#x2606 &#x2606 &#x2606
+      </h1><br>
     </div>
-    <div class="menu" id="mobmenu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>  
-    <div class="chicken">
-      <div class="overlay">      
-        <h1 class="logo noselect" id="logo" style="opacity: 0;">Very&nbsp;Nice&nbsp; Restaurant<br>&#x2606 &#x2606 &#x2606</h1><br>
-      </div>
-    </div>  
-    <div class="content">
-      <h1>Fine Dining</h1>      
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt accusamus officia minima maxime! Sint voluptas, consequatur doloribus velit cumque molestias asperiores illo dolores similique veniam, sapiente optio aspernatur maiores cupiditate unde quaerat facere, non provident dignissimos ad! Accusamus sit fugit, magni consequatur vitae quas alias doloremque voluptas dicta. Aperiam?</p>        
-      <div class="food-display">
-        <div style="background-image: url('./images/burger-min.jpg')"></div>
-        <div style="background-image: url('./images/pizza-min.jpg')"></div>
-        <div style="background-image: url('./images/sandwich-min.jpg')" ></div>
-      </div>
-      <a class="menu" href="menu.html"> View our menu</a>
+  </div>
+  <div class="content">
+    <h1>Fine Dining</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt accusamus officia minima maxime! Sint
+      voluptas, consequatur doloribus velit cumque molestias asperiores illo dolores similique veniam, sapiente optio
+      aspernatur maiores cupiditate unde quaerat facere, non provident dignissimos ad! Accusamus sit fugit, magni
+      consequatur vitae quas alias doloremque voluptas dicta. Aperiam?</p>
+    <div class="food-display">
+      <div style="background-image: url('./images/burger-min.jpg')"></div>
+      <div style="background-image: url('./images/pizza-min.jpg')"></div>
+      <div style="background-image: url('./images/sandwich-min.jpg')"></div>
     </div>
-    <div class="burger resize"></div>
-    <div class="content">
-      <h1>Our Restaurant</h1>
-      <div class="our-restaurant">
-        <div class="image" style="background-image: url('./images/restaurant-min.jpg');"></div>
-        <div class="writing">
-          <h2>Our Dining Area</h2>
-          <p>Our dining area is world's lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, qui. Qui, doloremque iusto assumenda facilis dolorum dignissimos dicta fuga cumque quo itaque non tenetur impedit illo ratione, tempore alias. Sunt devi okla sinum</p>
-        </div>
-      </div>
-      <div class="our-restaurant" id="reverse">        
-        <div class="writing">
-          <h2>Our Chefs</h2>
-          <p>Our chefs are world's lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, qui. Qui, doloremque iusto assumenda facilis dolorum dignissimos dicta fuga cumque quo itaque non tenetur impedit illo ratione, tempore alias. Sunt devi okla sinum</p>
-        </div>
-        <div class="image" style="background-image: url('./images/chef-min.jpg');"></div>
-      </div>
-      <div class="our-restaurant">
-        <div class="image" style="background-image: url('./images/kebab-min.jpg');background-position: 60% center;"></div>
-        <div class="writing">
-          <h2>Our Dishes</h2>
-          <p>Our dishes are world's lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, qui. Qui, doloremque iusto assumenda facilis dolorum dignissimos dicta fuga cumque quo itaque non tenetur impedit illo ratione, tempore alias. Sunt devi okla sinum</p>
-        </div>
+    <a class="menu" href="menu.html"> View our menu</a>
+  </div>
+  <div class="burger resize"></div>
+  <div class="content">
+    <h1>Our Restaurant</h1>
+    <div class="our-restaurant">
+      <div class="image" style="background-image: url('./images/restaurant-min.jpg');"></div>
+      <div class="writing">
+        <h2>Our Dining Area</h2>
+        <p>Our dining area is world's lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, qui. Qui,
+          doloremque iusto assumenda facilis dolorum dignissimos dicta fuga cumque quo itaque non tenetur impedit illo
+          ratione, tempore alias. Sunt devi okla sinum</p>
       </div>
     </div>
-    <div class="content">
-      <h1>Contact Us</h1>
-      <div class="container">
-          <form>
-        
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Email Address</label>
-            <input type="text" id="email" placeholder="something@email.com">
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit" style="display:block;margin:0 auto;font-family: 'EB Garamond', serif;font-size: inherit;margin: 0 auto;">
-        
-          </form>
-        </div>
-    </div> 
-    <div class="footer">This is the footer</div>
+    <div class="our-restaurant" id="reverse">
+      <div class="writing">
+        <h2>Our Chefs</h2>
+        <p>Our chefs are world's lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, qui. Qui, doloremque
+          iusto assumenda facilis dolorum dignissimos dicta fuga cumque quo itaque non tenetur impedit illo ratione,
+          tempore alias. Sunt devi okla sinum</p>
+      </div>
+      <div class="image" style="background-image: url('./images/chef-min.jpg');"></div>
+    </div>
+    <div class="our-restaurant">
+      <div class="image" style="background-image: url('./images/kebab-min.jpg');background-position: 60% center;"></div>
+      <div class="writing">
+        <h2>Our Dishes</h2>
+        <p>Our dishes are world's lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, qui. Qui, doloremque
+          iusto assumenda facilis dolorum dignissimos dicta fuga cumque quo itaque non tenetur impedit illo ratione,
+          tempore alias. Sunt devi okla sinum</p>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Contact Us</h1>
+    <div class="container">
+      <form>
+
+        <label for="fname">First&nbsp;Name</label>
+        <input type="text" id="fname" name="firstname">
+
+        <label for="lname">Last&nbsp;Name</label>
+        <input type="text" id="lname" name="lastname">
+
+        <label for="country">Email&nbsp;Address</label>
+        <input type="text" id="email">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" style="height:150px"></textarea>
+
+        <input type="submit" value="Submit"
+          style="display:block;margin:0 auto;font-family: 'EB Garamond', serif;margin: 0 auto;">
+
+      </form>
+    </div>
+  </div>
+  <div class="footer">This is the footer</div>
   <script src="script.js"></script>
 </body>
+
 </html>
