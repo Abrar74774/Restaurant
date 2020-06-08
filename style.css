@@ -72,6 +72,7 @@ a.menu:hover:after {
   padding-top: 35vh;
   color: #fdfdfd;
   text-align: center;
+  text-shadow: 1px 2px 3px #111;
   line-height: 1;
   -webkit-transition: opacity 0.4s;
   transition: opacity 2s; }
